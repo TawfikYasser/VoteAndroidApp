@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Other.AdminControl">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_control"
+            android:background="@color/white"
+            app:layout_scrollFlags="noScroll|enterAlways"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                app:hintTextColor="@color/colorPrimary"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="اسم النادي"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/change_reg"
+                    android:id="@+id/club_name"
+                    android:inputType="text"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RelativeLayout
+
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:id="@+id/start_vote_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_margin="16dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="18sp"
+                        android:fontFamily="@font/change_bold"
+                        android:gravity="right"
+                        android:layout_gravity="right"
+                        android:text="بدء/ ايقاف الإنتخابات"
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:textSize="10sp"
+                        android:fontFamily="@font/change_reg"
+                        android:gravity="right"
+                        android:layout_gravity="right"
+                        android:text="اكتب اسم النادي بالأعلى ثم قم بتفعيل الإنتخابات"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="16dp"
+                    android:enabled="true"
+                    android:checked="false"
+                    android:clickable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/switch_vote"
+                    android:layout_gravity="center"/>
+            </RelativeLayout>
+            <TextView
+                android:padding="16dp"
+                android:text="بعد إدخال اسم النادي وتفعيل الانتخابات سيتمكن جميع الاعضاء من التصويت وعندما تريد ايقاف عملية التصويت يمكنك إلغاء التفعيل مرة اخرى بنفس الطريقة."
+                android:fontFamily="@font/change_reg"
+                android:textSize="10sp"
+                android:layout_margin="5dp"
+                android:gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+            <View
+                android:background="#ccc"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <Button
+                android:fontFamily="@font/change_bold"
+                android:id="@+id/show_results"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="عرض نتائج الإنتخابات"
+                android:layout_gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="60dp"/>
+            <Button
+                android:fontFamily="@font/change_bold"
+                android:id="@+id/hide_results"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="إخفاء نتائج الإنتخابات"
+                android:layout_gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="60dp"/>
+            <View
+                android:background="#ccc"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <TextView
+                android:layout_margin="16dp"
+                android:fontFamily="@font/change_reg"
+                android:text="إضافة إعلانات للأعضاء"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                app:hintTextColor="@color/colorPrimary"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="نص الإعلان"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/change_reg"
+                    android:id="@+id/ad_text"
+                    android:inputType="textLongMessage|textMultiLine"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:fontFamily="@font/change_bold"
+                android:text="حفظ وإرسال"
+                android:id="@+id/send_add_btn"
+                android:layout_margin="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"/>
+            <View
+                android:background="#ccc"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <Button
+                android:id="@+id/sign_login_state"
+                android:gravity="center"
+                android:fontFamily="@font/change_bold"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:text="تفعيل التسجيل"
+                android:layout_margin="16dp"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="60dp"/>
+            <Button
+                android:id="@+id/sign_login_state2"
+                android:gravity="center"
+                android:fontFamily="@font/change_bold"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:text="ايقاف التسجيل"
+                android:layout_margin="16dp"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="60dp"/>
+           <TextView
+               android:text="تطبيق انتخب رئيسك - 2020"
+               android:fontFamily="@font/change_reg"
+               android:layout_margin="16dp"
+               android:gravity="center"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"/>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

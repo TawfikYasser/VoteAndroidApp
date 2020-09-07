@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="2dp"
+    android:layout_gravity="right"
+    android:id="@+id/report_item"
+    app:cardElevation="6dp"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/report_image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/member_icon"
+                app:civ_border_width="0dp"
+                android:layout_alignParentRight="true"
+                android:cropToPadding="true"
+                app:civ_border_color="@color/colorAccent"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:focusable="true"
+                tools:targetApi="m" />
+            <TextView
+                android:id="@+id/report_name"
+                android:layout_width="200dp"
+                android:gravity="right"
+                android:layout_height="wrap_content"
+                android:text="الأسم"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/report_image"
+                android:fontFamily="@font/change_bold"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                />
+            <TextView
+                android:background="@drawable/typetextshape"
+                android:id="@+id/report_type"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="80dp"
+                android:gravity="center"
+                android:fontFamily="@font/change_bold"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_height="40dp"
+                android:text="نوع الحساب"/>
+
+        </RelativeLayout>
+        <View
+            android:background="#ccc"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_centerVertical="true"
+                android:id="@+id/number_of_votesTxt"
+                android:textColor="@color/black"
+                android:fontFamily="@font/change_bold"
+                android:text="عدد الأصوات: "
+                android:gravity="right"
+                android:layout_margin="16dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/number"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/change_bold"
+                android:text="1"
+                android:gravity="right"
+                android:layout_margin="16dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/number_of_votesTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

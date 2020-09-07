@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "846791143284",
+    "firebase_url": "https://voteapp-cdb76.firebaseio.com",
+    "project_id": "voteapp-cdb76",
+    "storage_bucket": "voteapp-cdb76.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:846791143284:android:ea21e02fbb3c305208c621",
+        "android_client_info": {
+          "package_name": "com.khaled.vote"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "846791143284-obamhg6ai5idjq7bmvlb81eddnnqtpuv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.khaled.vote",
+            "certificate_hash": "6a98911317b73e0e0d25be5a26c9b71b7f2090f5"
+          }
+        },
+        {
+          "client_id": "846791143284-ot5vjtnfsjrlimglqkcsa83enp96k7vq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAR78v3cEFCQXuZKfW0x5e9C1KjpCTARBo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "846791143284-ot5vjtnfsjrlimglqkcsa83enp96k7vq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
